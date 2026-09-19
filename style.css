@@ -11,3 +11,7 @@
 .date-arena .yes.yes-attention{animation:yesAttention .8s ease-in-out infinite;z-index:6;will-change:transform,filter,box-shadow}
 @keyframes yesAttention{0%,100%{transform:scale(1);filter:brightness(1);box-shadow:0 9px 22px #ff5c8a55}50%{transform:scale(1.075);filter:brightness(1.18);box-shadow:0 14px 34px #ff5c8aaa}}
 @media(prefers-reduced-motion:reduce){.date-arena .yes.yes-attention{animation:none;filter:brightness(1.12);box-shadow:0 14px 34px #ff5c8aaa}}
+
+/* Keep the growing YES label proportional with the button. */
+.date-arena .yes{display:flex;align-items:center;justify-content:center;font-size:clamp(1rem,4.2vw,1.3rem);line-height:1.1}
+.date-arena .yes.yes-attention{font-size:clamp(1.15rem,5vw,1.55rem)}
