@@ -6,3 +6,8 @@
 .date-arena .no{width:auto;flex:0 0 auto;z-index:5}
 @media(max-width:600px){.date-arena{height:auto;min-height:190px;display:flex;overflow:visible;padding:10px 12px 18px}.date-arena .btn{width:auto;min-width:120px;max-width:calc(100% - 24px);margin:0}.date-arena .yes,.date-arena .no{position:relative;left:auto;right:auto;top:auto}}
 @media(max-width:360px){.date-arena .btn{min-width:105px;max-width:calc(100% - 20px)}}
+
+/* After the third NO attempt, make YES pulse forward and flash for attention. */
+.date-arena .yes.yes-attention{animation:yesAttention .8s ease-in-out infinite;z-index:6;will-change:transform,filter,box-shadow}
+@keyframes yesAttention{0%,100%{transform:scale(1);filter:brightness(1);box-shadow:0 9px 22px #ff5c8a55}50%{transform:scale(1.075);filter:brightness(1.18);box-shadow:0 14px 34px #ff5c8aaa}}
+@media(prefers-reduced-motion:reduce){.date-arena .yes.yes-attention{animation:none;filter:brightness(1.12);box-shadow:0 14px 34px #ff5c8aaa}}
