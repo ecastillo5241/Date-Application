@@ -15,3 +15,9 @@
 /* Keep the growing YES label proportional with the button. */
 .date-arena .yes{display:flex;align-items:center;justify-content:center;font-size:clamp(1rem,4.2vw,1.3rem);line-height:1.1}
 .date-arena .yes.yes-attention{font-size:clamp(1.15rem,5vw,1.55rem)}
+
+/* Playful Who Pays interaction */
+.pay-grid .choice{transition:transform .22s ease,background .22s ease,box-shadow .22s ease}
+.pay-grid .pay-nudge{background:#ffe2ec;box-shadow:0 8px 22px #ff5c8a2b}
+.pay-grid .pay-approved{background:#ffd5e3;transform:scale(1.04)}
+.pay-message{min-height:28px;margin-top:14px;font-size:13px;font-weight:700}
