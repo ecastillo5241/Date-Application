@@ -21,3 +21,7 @@
 .pay-grid .pay-nudge{background:#ffe2ec;box-shadow:0 8px 22px #ff5c8a2b}
 .pay-grid .pay-approved{background:#ffd5e3;transform:scale(1.04)}
 .pay-message{min-height:28px;margin-top:14px;font-size:13px;font-weight:700}
+
+/* Make the mock-payment status impossible to miss. */
+.fake-payment-note{margin:0 auto 16px;padding:12px 14px;max-width:420px;border:1px solid #f2a8bd;border-radius:14px;background:#fff1f6;color:#756a70;font-size:13px;line-height:1.45}
+.fake-payment-note b{color:var(--ink);font-size:14px}
